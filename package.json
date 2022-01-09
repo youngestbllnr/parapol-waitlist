@@ -1,5 +1,5 @@
 {
-  "name": "rapolli_waitlist",
+  "name": "parapol_waitlist",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",

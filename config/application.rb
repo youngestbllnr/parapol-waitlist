@@ -3,7 +3,7 @@ require "rails/all"
 
 Bundler.require(*Rails.groups)
 
-module RapolliWaitlist
+module ParapolWaitlist
   class Application < Rails::Application
     config.load_defaults 6.1
 

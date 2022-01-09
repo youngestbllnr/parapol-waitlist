@@ -1,13 +1,13 @@
-# Rapolli - Waitlist Campaign
+# Parapol - Waitlist Campaign
 
-[https://www.rapolli.com](https://www.rapolli.com)
+[https://www.parapol.ph](https://www.parapol.ph)
 
 ## Install
 
 ### Clone the repository
 
 ```shell
-git clone git@github.com:youngestbllnr/rapolli-waitlist.git
+git clone git@github.com:youngestbllnr/parapol-waitlist.git
 cd project
 ```
 
