@@ -1,0 +1,75 @@
+#success-page {
+    text-align: center;
+    main,
+    section {
+        position: relative;
+        padding: 0 32px;
+    }
+    .section-bridge {
+        width: 2px;
+        height: 112px;
+        background: rgba(211, 211, 211, 0.72);
+        margin: -32px auto 16px;
+    }
+    .header {
+        margin: 0;
+    }
+    .sub-header {
+        font-size: 14pt;
+        font-weight: normal;
+        margin: 16px auto;
+        padding: 0 12px;
+        line-height: 180%;
+    }
+    .subscriber-count {
+        font-size: 18pt;
+        font-weight: 600;
+        border-radius: 24px;
+        width: fit-content;
+        margin: 32px auto;
+        padding: 42px 72px;
+        line-height: 150%;
+    }
+    .subscription-note {
+        font-size: 11pt;
+        margin: 0;
+    }
+    .invite-prompt {
+        font-size: 14pt;
+        font-weight: normal;
+        line-height: 180%;
+        max-width: 524px;
+        margin: 12px auto;
+    }
+    #channels {
+        margin: 32px auto;
+    }
+    #channels a {
+        display: block;
+        font-size: 11pt;
+        width: fit-content;
+        margin: 24px auto;
+        padding: 18px 42px;
+        border-radius: 16px;
+    }
+    #channels a#facebook {
+        background: var(--facebook);
+    }
+    #channels a#messenger {
+        background: var(--messenger);
+    }
+    #channels a#twitter {
+        background: var(--twitter);
+    }
+    #channels a i {
+        float: left;
+        font-size: 12pt;
+        margin: 0 12px 0 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #success-page #banner {
+        margin-top: 42px;
+    }
+}

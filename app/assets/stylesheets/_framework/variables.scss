@@ -1,0 +1,25 @@
+:root {
+    // Max Width
+    --max-width: 1024px;
+    // Brand Colors
+    --header-primary-color: #a83232;
+    --header-secondary-color: #f7ff66;
+    --body-primary-color: #a83232;
+    --body-secondary-color: #191919;
+    // Primary Colors
+    --green: #56941E;
+    --yellow: #ffcc00;
+    --red: #ed1419;
+    // Social Media Colos
+    --facebook: #3b5998;
+    --messenger: #0078ff;
+    --twitter: #1da1f2;
+    // Gradient
+    --gradient: linear-gradient(35deg, #a83232, #ff5b5b);
+    // Border Radius
+    --border-radius: 16px;
+    // Cards
+    --card-padding: 24px;
+    --card-border-radius: 24px;
+    --card-full-width: calc(100% - 48px);
+}

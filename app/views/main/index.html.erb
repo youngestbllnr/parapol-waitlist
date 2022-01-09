@@ -1,0 +1,107 @@
+<!-- Page Background -->
+<div id="page-background"></div>
+
+<!-- Particles -->
+<div id="particles"></div>
+
+<!-- Landing Page -->
+<div id="landing-page" class="page">
+  <%= render 'components/nav' %>
+  
+  <!-- HERO SECTION -->
+  <main id="hero">
+    <div id="hero-text">
+      <h2 class="header glow-text"><strong>Raffles but awesome!</strong></h2>
+      <h4 class="sub-header">Host, manage, and join raffles the cool way.</h4>
+    </div>
+    
+    <div id="subscribe">
+      <%= form_with(model: @subscriber, url: subscribe_path, method: :post) do |form| %>
+        <div id="email-field">
+          <%= form.text_field :email, placeholder: "Enter your email", autocomplete: 'email', required: true %>
+        </div>
+        <%= form.submit "Join waitlist", data: { disable_with: "Loading..." }, class: "cta" %>
+      <% end %>
+    </div>
+    
+    <img src="/images/ticket.png" id="hero-img" class="float"/>
+  </main>
+
+  <br><br>
+  <section id="about-us" class="section-width-limit">
+    <p id="hook">Luck alone won't cut it.<br>Be lucky and awesome at the same time!</p>
+
+    <img src="/images/cool-emoji.png" class="float"/>
+
+    <p id="value-proposition">
+      <i>
+        Whether you're setting up or joining a raffle, rapolli will help you do it the coolest way possible.
+      </i>
+    </p>
+  </section>
+
+  <br><br>
+  <section id="learn-more" class="section-width-limit">
+    <p id="learn-more-prompt" class="prompt">Learn More</p>
+    <div class="section-bridge"></div>
+
+    <div id="details">
+      <h2 class="header">Rapolli</h2>
+      <p class="sub-header">All-in-one platform for raffles.</p>
+      <div class="card-list">
+          <div class="card-list-item">
+              <div class="label">
+                  <p class="title">For Organizers</p>
+              </div>
+              <div class="card">
+                  <p class="body">
+                    <strong>Set-up a raffle within 5 minutes</strong> and provide people with an easier way to join your raffle to get more participants.<br><br>
+                    <span class="bullet">🤖</span> <strong>Automated</strong> issuance of tickets & tracking of payments + receipts.<br><br>
+                    <span class="bullet">📃</span> <strong>Eliminate</strong> the need for inconvenient online forms.<br><br>
+                    <span class="bullet">📈</span> <strong>Monitor</strong> your raffles with visual tables and graphs.<br><br>
+                    <span class="bullet">🔔</span> <strong>Send</strong> notifications to your participants. (for draw dates, results, etc.)<br><br>
+                    <span class="bullet">🎰</span> <strong>Host and perform</strong> the raffle draws through your own dashboard.<br><br>
+                  </p>
+              </div>
+          </div>
+          <div class="card-list-item">
+              <div class="label">
+                  <p class="title">For Participants</p>
+              </div>
+              <div class="card">
+                  <p class="body">
+                    <strong>Join a raffle in less than 30 seconds</strong> and get your tickets instantly.<br><br>
+                    <span class="bullet">🔎</span> <strong>Discover</strong> hundreds of awesome raffles you can join.<br><br>
+                    <span class="bullet">💵</span> <strong>Buy and pay</strong> for your tickets directly and securely.<br><br>
+                    <span class="bullet">👌</span> <strong>Feel safe</strong> as all raffles at rapolli undergoes verification.<br><br>
+                    <span class="bullet">💼</span> <strong>Get protected</strong> with our Rapolli Guarantee.<br><br>
+                    <span class="bullet">📧</span> <strong>Stay updated</strong> with draw dates, results, etc. through email and push notifications.<br><br>
+                  </p>
+              </div>
+          </div>
+  </section>
+
+  <br><br><br><br>
+  <section id="contact-us" class="section-width-limit">
+    <div class="card gradient light-shadow">
+      <h2 class="title">Have any questions?</h2>
+      <a href="https://m.me/rapolli" target="_blank" class="cta dark-shadow">Message us</a>
+    </div>
+  </section>
+
+  <br>
+  <%= render 'components/footer' %>
+</div>
+
+<!-- Particles Script -->
+<script type="text/javascript">
+  if (typeof(indexParticlesJS) === "undefined") {
+    const indexParticlesJS = window.particlesJS;
+    indexParticlesJS.load('particles', 'particles.json');
+  } else {
+  	indexParticlesJS.load('particles', 'particles.json');
+  }
+</script>
+
+<!-- Typeform Script -->
+<script src="//embed.typeform.com/next/embed.js"></script>

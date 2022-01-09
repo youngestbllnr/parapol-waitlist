@@ -1,0 +1,49 @@
+<!-- Page Background -->
+<div id="page-background"></div>
+
+<!-- Particles -->
+<div id="particles" style="opacity: 0.42;"></div>
+
+<!-- Success Page -->
+<div id="success-page" class="page">
+  <%= render 'components/nav' %>
+
+  <main>
+    <br><br>
+    <div id="banner">
+      <h2 class="header">Thank you!</h2>
+      <h4 class="sub-header">We have added your email address to our waitlist.</h4>
+      <p class="subscriber-count card light-shadow"><%= Subscriber.count %> people are waiting with you</p>
+      <p class="subscription-note">This subscription is held for <%= params[:email].strip %>. Is this <%= link_to "not you?", root_path %>
+    </div>
+
+    <br><br><br><br><br>
+    <div class="section-bridge"></div>
+    <div id="invite">
+      <h2 class="header">Invite Friends</h2>
+      <p class="invite-prompt">Invite your friends who might be interested to get lab tests at home!</p>
+      <div id="channels">
+        <a href="fb-messenger://share/?link=https%3A%2F%2Fwww.rapolli.com" target="_blank" id="messenger" class="cta dark-shadow no-underline">
+          <i class="fab fa-facebook-messenger"></i> Send in Messenger
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rapolli.com" target="_blank" id="facebook" class="cta dark-shadow no-underline">
+          <i class="fab fa-facebook"></i> Post to Facebook
+        </a>
+        <a href="http://www.twitter.com/share?url=https%3A%2F%2Fwww.rapolli.com" target="_blank" id="twitter" class="cta dark-shadow no-underline">
+          <i class="fab fa-twitter"></i> Tweet
+        </a>
+      </div>
+    </div>
+    
+    <br><br><br><br><br>
+  </main>
+</div>
+<!-- Particles Script -->
+<script type="text/javascript">
+  if (typeof(successParticlesJS) === "undefined") {
+	const successParticlesJS = window.particlesJS;
+	successParticlesJS.load('particles', 'particles.json');
+  } else {
+  	successParticlesJS.load('particles', 'particles.json');
+  }
+</script>

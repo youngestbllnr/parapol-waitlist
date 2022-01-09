@@ -1,0 +1,90 @@
+// fonts.scss
+* {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    color: var(--body-secondary-color);
+}
+
+i,
+span {
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Quantify';
+    font-style: normal;
+    font-weight: normal;
+    src: font-url('Quantify.woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: font-url('Montserrat-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: font-url('Montserrat-Medium.woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: font-url('Montserrat-Bold.woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: font-url('Montserrat-ExtraBold.woff');
+}
+
+// Medium
+medium {
+    font-weight: 500;
+}
+
+// Logo
+.logo {
+    font-family: "Quantify", Helvetica, Arial, sans-serif !important;
+}
+
+// Italic
+.italic {
+    font-style: italic;
+}
+
+// Bold
+.bold {
+    font-weight: bold;
+}
+
+// Bolder
+.bolder {
+    font-weight: 800;
+}
+
+// Presets
+.gradient-text {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.white-text {
+    background: #fafafa;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.translucent-text {
+    opacity: 0.8;
+    color: inherit;
+}
