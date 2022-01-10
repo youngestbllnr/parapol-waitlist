@@ -39,7 +39,7 @@
         display: inline-block;
         max-width: 475px;
         padding: 16px;
-        margin: 32px 0;
+        margin: 32px 0 16px;
         background: #ffffff;
         border-radius: var(--card-border-radius);
         box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.08);
@@ -74,7 +74,7 @@
         box-shadow: none;
     }
     #subscribe-prompt {
-        margin: -16px 0 0;
+        margin: 0 0 32px;
         font-size: 9pt;
         line-height: 200%;
         span {
