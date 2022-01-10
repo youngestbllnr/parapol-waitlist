@@ -73,6 +73,15 @@
         margin: 1px 0 0 12px;
         box-shadow: none;
     }
+    #subscribe-prompt {
+        margin: -16px 0 0;
+        font-size: 9pt;
+        line-height: 200%;
+        span {
+            color: var(--header-primary-color);
+            font-weight: 500;
+        }
+    }
     #hero-img {
         display: none;
         width: 100%;
