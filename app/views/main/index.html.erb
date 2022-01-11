@@ -18,7 +18,7 @@
     <div id="subscribe">
       <%= form_with(model: @subscriber, url: subscribe_path, method: :post) do |form| %>
         <div id="email-field">
-          <%= form.text_field :email, placeholder: "Enter your email", autocomplete: 'email', required: true %>
+          <%= form.email_field :email, placeholder: "Enter your email", autocomplete: 'email', required: true %>
         </div>
         <%= form.submit "Join waitlist", data: { disable_with: "Loading..." }, class: "cta" %>
       <% end %>
