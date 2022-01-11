@@ -45,6 +45,9 @@
         box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.08);
         z-index: 1;
     }
+    #subscribe form {
+        margin-bottom: -12px;
+    }
     #subscribe #email-field {
         display: inline-block;
         border: 1px solid #eee;
@@ -182,6 +185,9 @@
         }
         #subscribe {
             width: calc(100% - 32px);
+        }
+        #subscribe form {
+            margin-bottom: 0;
         }
         #subscribe #email-field {
             display: block;
